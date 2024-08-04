@@ -1,0 +1,67 @@
+// modified from https://github.com/LierB/fastfetch/blob/master/presets/ascii-art.jsonc
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.local/share/fastfetch/ascii/cat.txt",
+        "padding": {
+            "top": 2,
+            "right": 6
+        }
+    },
+    "display": {
+        "separator": " •  "
+    },
+    "modules": [
+	"break",
+	"break",
+	{
+	    "type": "custom",
+	    "format": "{#1}{#32}latesc{#}{#37}@{#1}{#32}studenting"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "distribution   ",
+            "keyColor": "33"
+        },
+        {
+            "type": "host",
+            "key": "device         ",
+            "keyColor": "33"
+        },
+        {
+            "type": "cpu",
+            "key": "cpu            ",
+            "keyColor": "33"
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": "packages       ",
+            "keyColor": "33"
+        },
+        {
+            "type": "shell",
+            "key": "unix shell     ",
+            "keyColor": "33"
+        },
+        {
+            "type": "terminal",
+            "key": "terminal       ",
+            "keyColor": "33"
+        },
+	{
+	    "type": "terminalfont",
+	    "key": "terminal font  ",
+	    "keyColor": "33"
+	},
+	"break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        },
+        "break",
+        "break"
+    ]
+}
